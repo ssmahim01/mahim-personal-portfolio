@@ -1,4 +1,4 @@
-# React + Vite
+# Sayman Shakil Mahim - Personal Portfolio of Mahim
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
