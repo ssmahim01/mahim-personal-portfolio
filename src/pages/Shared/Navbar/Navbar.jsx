@@ -1,13 +1,12 @@
 import { NavLink } from "react-router-dom";
 import Logo from "../../../assets/logos/sayman-shakil-mahim(SSM).jpg";
 import Resume from "../../../components/Resume";
+import "./Navbar.css";
 
 const Navbar = () => {
   const routes = (
     <>
       <NavLink to="/">Home</NavLink>
-      <NavLink to="/about-me">About Me</NavLink>
-      <NavLink to="/skills">Skills</NavLink>
       <NavLink to="/projects">Projects</NavLink>
       <NavLink to="/contact-me">Contact Me</NavLink>
     </>
@@ -57,7 +56,7 @@ const Navbar = () => {
         </div>
         <ul
           tabIndex={0}
-          className="menu menu-sm dropdown-content bg-black bg-opacity-30 rounded-xl z-[10] mt-3 w-80 p-2 right-2 shadow-md *:text-white/90 *:font-bold"
+          className="menu menu-sm dropdown-content bg-black bg-opacity-60 rounded-xl z-[10] mt-3 w-80 p-3 right-2 space-y-3 shadow-md *:text-white/90 *:font-bold"
         >
           {routes}
         </ul>

@@ -4,14 +4,26 @@ import Resume from "../Resume";
 import { Link } from "react-router-dom";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
+import { Typewriter } from "react-simple-typewriter";
 
 const Designation = () => {
   return (
     <div className="py-20 bg-purple-100">
       <div className="lg:w-4/5 w-11/12 mx-auto flex lg:flex-row flex-col-reverse justify-between items-center gap-8">
         <div className="space-y-3 lg:w-1/2">
-          <h2 className="lg:text-5xl text-4xl md:text-left text-violet-600 italic text-center font-extrabold pb-2">
-            Web Developer
+          <h2 className="lg:text-4xl text-3xl md:text-left text-center font-extrabold pb-2">
+            I am
+            <span className="text-teal-600">
+              <Typewriter
+                words={[" Sayman Shakil Mahim", " A Web Developer"]}
+                loop={false}
+                cursor
+                cursorStyle="|"
+                typeSpeed={70}
+                deleteSpeed={40}
+                delaySpeed={1000}
+              />
+            </span>
           </h2>
 
           <p className="lg:w-11/12 text-gray-600 md:text-base text-sm font-medium md:text-left text-center pb-5">
