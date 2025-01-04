@@ -23,7 +23,7 @@ const Designation = () => {
             ensure of functionality and usability.
           </p>
 
-          <div className="flex gap-4 items-center pb-6">
+          <div className="flex gap-4 md:justify-start justify-center items-center pb-6">
             <button>
               <Link to="https://github.com/ssmahim01" target="_blank">
                 <VscGithubInverted className="text-3xl rounded-full" />
