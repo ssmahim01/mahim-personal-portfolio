@@ -1,14 +1,22 @@
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import Logo from "../../../assets/logos/sayman-shakil-mahim(SSM).jpg";
 import Resume from "../../../components/Resume";
-import "./Navbar.css";
+// import "./Navbar.css";
 
 const Navbar = () => {
   const routes = (
     <>
-      <NavLink to="/">Home</NavLink>
+      {/* <NavLink to="/">Home</NavLink>
       <NavLink to="/projects">Projects</NavLink>
-      <NavLink to="/contact-me">Contact Me</NavLink>
+      <NavLink to="/contact-me">Contact Me</NavLink> */}
+
+      <a href="/">Home</a>
+
+      <a href="#about-me">About Me</a>
+      <a href="#skills">My Skills</a>
+      <a href="#education">My Education</a>
+      <a href="#projects">My Projects</a>
+      <a href="#contact-me">Contact Me</a>
     </>
   );
 

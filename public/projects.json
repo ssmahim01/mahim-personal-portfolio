@@ -9,16 +9,16 @@
           "githubLink": "https://github.com/ssmahim01/discount-pro-application",
           "detailedDescription": "This app helps users find coupons by brands, copy coupon codes, and browse available discounts easily.",
           "challenges": [
-            "Integrating Firebase authentication and handling edge cases like multiple failed login attempts.",
-            "Implement some packages, these packages are unknown. But, when explore the packages then easily applied."
+            "Integrating Firebase authentication and handling edge cases like multiple failed login attempts",
+            "Implement some packages, these packages are unknown. But, when explore the packages then easily applied"
           ],
           "shortcomings": [
-            "Search functionality in Brands page and users can find their favorite brand in here.",
-            "Sort options in Brands page where find the top rated brands by sort functionality."
+            "Search functionality in Brands page and users can find their favorite brand in here",
+            "Sort options in Brands page where find the top rated brands by sort functionality"
           ],
           "plannedImprovements": [
-            "Implementing a push notification system to inform users about new deals.",
-            "Adding Sort options with functionality and Search functionality."
+            "Implementing a push notification system to inform users about new deals",
+            "Adding Sort options with functionality and Search functionality"
           ]
       },
       {
@@ -31,16 +31,16 @@
           "githubLink": "https://github.com/ssmahim01/chill-gamer-platform",
           "detailedDescription": "This project enables users to filter game reviews by genres to quickly find relevant content.",
           "challenges": [
-            "Ensuring the filtering logic handles multiple genres and updates the UI in real-time.",
-            "Managing the state efficiently for large datasets."
+            "Ensuring the filtering logic handles multiple genres and updates the UI in real-time",
+            "Managing the state efficiently for large datasets"
           ],
           "shortcomings": [
-            "Currently supports filtering by a single genre only.",
-            "Does not have a search bar to combine filters with keyword search."
+            "Currently supports filtering by a single genre only",
+            "Does not have a search bar to combine filters with keyword search"
           ],
           "plannedImprovements": [
-            "Adding multi-genre filtering functionality.",
-            "Integrating a search bar for more robust filtering."
+            "Adding multi-genre filtering functionality",
+            "Integrating a search bar for more robust filtering"
           ]
       },
       {
@@ -53,12 +53,12 @@
           "githubLink": "https://github.com/ssmahim01/mz-shop",
           "detailedDescription": "The MZ Shop platform is the responsive website. In here, users can browse products also browse by categories. They can view details of the product and would like to add to cart or watch list.",
           "challenges": [
-            "The main challenging thing was the Navbar not be the same in different pages, just different view in the Home page.",
-            "Fetch data by categories in the Home page."
+            "The main challenging thing was the Navbar not be the same in different pages, just different view in the Home page",
+            "Fetch data by categories in the Home page"
           ],
           "shortcomings": [
-            "When add a product in cart side from the watch list, then add the product perfectly but do not remove from the watch list. So, main focus on it.",
-            "Complete the Footer. Links improvements are the main."
+            "When add a product in cart side from the watch list, then add the product perfectly but do not remove from the watch list. So, main focus on it",
+            "Complete the Footer. Links improvements are the main"
           ],
           "plannedImprovements": [
             "Improve the Dashboard page. Apply delete functionality when add product in cart from the watch list",

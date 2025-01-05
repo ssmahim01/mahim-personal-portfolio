@@ -1,9 +1,9 @@
 const Heading = ({title, subHeading}) => {
     return (
-        <div className="mb-8">
+        <div className="mb-6">
             <h2 className="text-center md:text-4xl text-3xl font-extrabold">{title}</h2>
 
-            <p className="text-center text-gray-500 font-semibold">{subHeading}</p>
+            <p className="text-center mt-2 text-gray-500 font-semibold">{subHeading}</p>
         </div>
     );
 };

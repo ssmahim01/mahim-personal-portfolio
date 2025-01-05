@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Heading from "../../components/Heading/Heading";
+import Loading from "../../components/Loading";
 
 const Project = () => {
   const [project, setProject] = useState([]);
+  const [loading, setLoading] = useState(true);
   const { id } = useParams();
   // console.log(id);
 
@@ -15,12 +17,16 @@ const Project = () => {
           (singleProject) => singleProject.id === parseInt(id)
         );
         setProject(projectData);
+        setLoading(false);
       })
       .catch((error) => {
         console.error("Error fetching the project:", error);
         setProject([]);
+        setLoading(true);
       });
   }, [id]);
+
+  if(loading) return <Loading />
 
   if (!project) {
     return (
@@ -36,17 +42,20 @@ const Project = () => {
     <div className="pt-24 pb-20 lg:w-4/5 w-11/12 mx-auto">
       <Heading title={`${project.name}`} />
 
-      <div className="flex flex-col gap-4 shadow-lg rounded-lg">
+      <div className="flex flex-col bg-lime-100 gap-4 shadow-lg rounded-lg">
         <img
           src={project.image}
           alt={project.name}
           className="w-full lg:h-96 md:h-72 h-52 rounded-t-lg mb-4"
         />
 
-        <div className="lg:pr-12 pr-8 pl-5 pb-8 space-y-3">
+        <div className="lg:pr-14 pr-8 pl-5 pb-8 space-y-3">
         <h1 className="md:text-3xl text-2xl font-bold mb-3">Project Name: {project.name}</h1>
         <p className="text-gray-500 font-medium">
           <strong className="text-gray-800 font-bold">Brief Description:</strong> {project.briefDescription}
+        </p>
+        <p className="text-gray-500 font-medium">
+          <strong className="text-gray-800 font-bold">Details:</strong> {project.detailedDescription}
         </p>
         <p className="text-gray-500 font-medium">
           <strong className="text-gray-800 font-bold">Main Technology Stack:</strong>{" "}
