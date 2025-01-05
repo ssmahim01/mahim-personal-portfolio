@@ -8,7 +8,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 const Designation = () => {
   return (
-    <div className="py-20 bg-violet-100">
+    <div className="py-20">
       <div className="lg:w-4/5 w-11/12 mx-auto flex lg:flex-row flex-col-reverse justify-between items-center gap-8">
         <div className="space-y-3 lg:w-1/2">
           <h2 className="lg:text-4xl text-3xl md:text-left text-center font-extrabold pb-2">

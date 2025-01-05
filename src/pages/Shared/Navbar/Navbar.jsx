@@ -1,5 +1,6 @@
 // import { NavLink } from "react-router-dom";
 import Logo from "../../../assets/logos/sayman-shakil-mahim(SSM).jpg";
+import NavBG from "../../../assets/color-bg.png";
 import Resume from "../../../components/Resume";
 // import "./Navbar.css";
 
@@ -21,7 +22,9 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar justify-between shadow-md fixed z-10 bg-base-200 lg:px-16 px-6">
+    <div className="navbar justify-between shadow-md fixed z-10 lg:px-16 px-6 bg-cover bg-center" style={{
+      backgroundImage: `url('${NavBG}')`
+    }}>
       <div className="navbar-start">
         <div className="flex gap-2 items-center">
           <img
