@@ -14,7 +14,7 @@ const ContactMe = () => {
 
     emailjs.sendForm(`${import.meta.env.VITE_SERVICE_ID}`, `${import.meta.env.VITE_TEMPLATE_ID}`, form.current, `${import.meta.env.VITE_PUBLIC_KEY}`)
     .then(result => {
-        console.log(result.text);
+        // console.log(result.text);
         Swal.fire({
             position: "center",
             icon: "success",
@@ -23,7 +23,7 @@ const ContactMe = () => {
             timer: 3000
           });
     }).catch(error => {
-        console.log(error.text);
+        // console.log(error.text);
         Swal.fire({
             position: "center",
             icon: "error",
@@ -47,7 +47,7 @@ const ContactMe = () => {
         >
          <h2 className="text-3xl font-bold">Get in Touch</h2>
 
-        <div className="divider w-2/5 pb-5"></div>
+        <div className="divider md:w-2/5 w-3/5 pb-5"></div>
 
           <div className="form-control">
             <input
@@ -86,7 +86,7 @@ const ContactMe = () => {
 
         <h2 className="text-2xl font-bold">Contact Information</h2>
 
-        <div className="divider w-1/2 pb-4"></div>
+        <div className="divider md:w-1/2 w-4/5 pb-4"></div>
 
         <h4 className="text-xl text-gray-700 flex gap-x-3 items-center"><ImLocation className="text-xl text-accent" /> <span className="font-semibold">Sylhet, Bangladesh</span></h4>
 

@@ -11,10 +11,10 @@ import Heading from "./Heading/Heading";
 
 const Skills = () => {
     return (
-        <div className="pt-5 pb-14">
-            <Heading title={"Skills"} subHeading={"Skills and what i am learning"} />
+        <div className="pt-5 lg:w-4/5 w-11/12 mx-auto pb-14">
+            <Heading title={"My Skills"} subHeading={"Skills and what i am learning"} />
 
-             <Marquee className="bg-base-300 p-5" speed={100} pauseOnHover={true}>
+             <Marquee className="bg-base-300 p-5 rounded-md" speed={100} pauseOnHover={true}>
             <div className="flex gap-8 items-center">
                 <h2 className="text-xl font-bold flex gap-4 items-center ml-10"><span>Frontend</span> <span>|</span></h2>
 

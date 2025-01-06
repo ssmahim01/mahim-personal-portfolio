@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Heading from "../../components/Heading/Heading";
 import Loading from "../../components/Loading";
+import { FaLink } from "react-icons/fa";
+import { ImGithub } from "react-icons/im";
 
 const Project = () => {
   const [project, setProject] = useState([]);
@@ -78,17 +80,17 @@ const Project = () => {
             to={project.liveLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn bg-neutral text-white text-lg font-bold px-8 rounded-full"
+            className="flex gap-2 items-center btn bg-neutral text-white md:text-lg font-bold md:px-8 px-4 rounded-full"
           >
-            Live Link
+            <FaLink className="text-lg" /> <span>Live Link</span>
           </Link>
           <Link
             to={project.githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn bg-fuchsia-600 text-white text-lg font-bold px-8 rounded-full"
+            className="flex gap-2 items-center btn bg-fuchsia-600 text-white md:text-lg font-bold md:px-8 px-4 rounded-full"
           >
-            GitHub Link
+           <ImGithub className="text-lg" /> <span>GitHub Link</span>
           </Link>
         </div>
         </div>

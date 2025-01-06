@@ -2,9 +2,13 @@
 import Logo from "../../../assets/logos/sayman-shakil-mahim(SSM).jpg";
 import NavBG from "../../../assets/color-bg.png";
 import Resume from "../../../components/Resume";
+import { useEffect, useRef, useState } from "react";
 // import "./Navbar.css";
 
 const Navbar = () => {
+  const [boxOpen, setBoxOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
   const routes = (
     <>
       {/* <NavLink to="/">Home</NavLink>
@@ -21,10 +25,26 @@ const Navbar = () => {
     </>
   );
 
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setBoxOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, []);
+
   return (
-    <div className="navbar justify-between shadow-md fixed z-10 lg:px-16 px-6 bg-cover bg-center" style={{
-      backgroundImage: `url('${NavBG}')`
-    }}>
+    <div
+      className="navbar justify-between shadow-md fixed z-10 lg:px-16 px-6 bg-cover bg-center"
+      style={{
+        backgroundImage: `url('${NavBG}')`,
+      }}
+    >
       <div className="navbar-start">
         <div className="flex gap-2 items-center">
           <img
@@ -41,36 +61,64 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-end">
-      <Resume />
+        <Resume />
       </div>
 
-      <div className="dropdown ml-3">
-        <div
+      <div className="dropdown ml-3" ref={dropdownRef}>
+        <button
+          onClick={() => setBoxOpen(!boxOpen)}
           tabIndex={0}
           role="button"
-          className="btn btn-ghost lg:hidden bg-gray-500 text-white btn-circle"
+          className="btn bg-neutral rounded-full border-none text-white lg:hidden mr-3 shadow-md"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
+          {boxOpen ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          )}
+        </button>
+        {boxOpen && (
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content bg-black bg-opacity-60 rounded-xl z-[10] mt-3 w-80 p-4 right-2 space-y-3 shadow-md *:text-white/90 *:font-bold"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h8m-8 6h16"
-            />
-          </svg>
-        </div>
-        <ul
-          tabIndex={0}
-          className="menu menu-sm dropdown-content bg-black bg-opacity-60 rounded-xl z-[10] mt-3 w-80 p-3 right-2 space-y-3 shadow-md *:text-white/90 *:font-bold"
-        >
-          {routes}
-        </ul>
+            <div className="lg:hidden flex flex-col gap-2">
+              <p className="text-2xl font-bold">
+                SS Mahim
+              </p>
+
+              <p className="text-xl text-amber-500 font-serif font-bold mb-2">Web Developer</p>
+            </div>
+
+            <div className="flex flex-col gap-3 font-bold">{routes}</div>
+          </ul>
+        )}
       </div>
     </div>
   );
