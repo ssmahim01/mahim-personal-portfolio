@@ -1,9 +1,8 @@
-import Heading from "../Heading/Heading";
 import meWithLaptop from "../../assets/me-with-laptop.jpg";
 
 const AboutMe = () => {
   return (
-    <div className="mt-10 mb-16">
+    <div className="pt-28">
     {/* <Heading title={"About"} /> */}
 
       <div className="lg:w-4/5 w-11/12 mx-auto flex lg:flex-row-reverse flex-col justify-between items-center">

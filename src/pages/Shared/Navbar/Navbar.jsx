@@ -1,9 +1,9 @@
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Logo from "../../../assets/logos/sayman-shakil-mahim(SSM).jpg";
 import NavBG from "../../../assets/color-bg.png";
 import Resume from "../../../components/Resume";
 import { useEffect, useRef, useState } from "react";
-// import "./Navbar.css";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [boxOpen, setBoxOpen] = useState(false);
@@ -11,17 +11,20 @@ const Navbar = () => {
 
   const routes = (
     <>
-      {/* <NavLink to="/">Home</NavLink>
-      <NavLink to="/projects">Projects</NavLink>
-      <NavLink to="/contact-me">Contact Me</NavLink> */}
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/about-me">About Me</NavLink>
+      <NavLink to="/skills">My Skills</NavLink>
+      <NavLink to="/education">My Education</NavLink>
+      <NavLink to="/projects">My Projects</NavLink>
+      <NavLink to="/contact-me">Contact Me</NavLink>
 
-      <a href="/">Home</a>
+      {/* <a href="/">Home</a>
 
       <a href="#about-me">About Me</a>
       <a href="#skills">My Skills</a>
       <a href="#education">My Education</a>
       <a href="#projects">My Projects</a>
-      <a href="#contact-me">Contact Me</a>
+      <a href="#contact-me">Contact Me</a> */}
     </>
   );
 
@@ -74,7 +77,7 @@ const Navbar = () => {
           {boxOpen ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -109,11 +112,11 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-black bg-opacity-60 rounded-xl z-[10] mt-3 w-80 p-4 right-2 space-y-3 shadow-md *:text-white/90 *:font-bold"
           >
             <div className="lg:hidden flex flex-col gap-2">
-              <p className="text-2xl font-bold">
-                SS Mahim
-              </p>
+              <p className="text-2xl font-bold">SS Mahim</p>
 
-              <p className="text-xl text-amber-500 font-serif font-bold mb-2">Web Developer</p>
+              <p className="text-xl text-sky-400 font-serif font-bold mb-2">
+                Web Developer
+              </p>
             </div>
 
             <div className="flex flex-col gap-3 font-bold">{routes}</div>

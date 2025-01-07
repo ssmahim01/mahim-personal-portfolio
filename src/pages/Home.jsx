@@ -12,23 +12,23 @@ const Home = () => {
         <Designation />
       </div>
 
-      <div id="about-me">
+      <div id="about-me" className="-mt-32">
         <AboutMe />
       </div>
 
-      <div id="skills">
+      <div className="lg:w-[87%] -mt-6 mx-auto" id="skills">
         <Skills />
       </div>
 
-      <div id="education">
+      <div id="education" className="mb-12">
         <Education />
       </div>
 
-      <div className="-mt-20" id="projects">
+      <div className="-mt-16" id="projects">
           <Projects />
         </div>
 
-        <div className="-mt-20" id="contact-me">
+        <div className="-mt-16" id="contact-me">
           <ContactMe />
         </div>
       </div>

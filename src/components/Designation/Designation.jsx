@@ -15,7 +15,7 @@ const Designation = () => {
             I am
             <span className="text-purple-500">
               <Typewriter
-                words={[" Sayman Shakil Mahim", " A Web Developer"]}
+                words={[" Sayman Shakil Mahim", " A Web Developer", " A Front-End Developer", " A Backend Developer"]}
                 loop={false}
                 cursor
                 cursorStyle="|"

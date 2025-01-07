@@ -11,7 +11,7 @@ import Heading from "./Heading/Heading";
 
 const Skills = () => {
     return (
-        <div className="pt-5 lg:w-4/5 w-11/12 mx-auto pb-14">
+        <div className="w-11/12 mx-auto pt-28">
             <Heading title={"My Skills"} subHeading={"Skills and what i am learning"} />
 
              <Marquee className="bg-base-300 p-5 rounded-md" speed={100} pauseOnHover={true}>
