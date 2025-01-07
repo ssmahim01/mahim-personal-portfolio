@@ -12,15 +12,15 @@ const Home = () => {
         <Designation />
       </div>
 
-      <div id="about-me" className="-mt-32">
+      <div id="about-me" className="-mt-32 -mb-20">
         <AboutMe />
       </div>
 
-      <div className="lg:w-[87%] -mt-6 mx-auto" id="skills">
+      <div className="lg:w-[87%] lg:mt-12 -mt-6 mx-auto" id="skills">
         <Skills />
       </div>
 
-      <div id="education" className="mb-12">
+      <div id="education" className="lg:mb-14 mb-4">
         <Education />
       </div>
 

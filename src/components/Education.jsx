@@ -4,7 +4,7 @@ import universityImg from "../assets/university.jpg";
 
 const Education = () => {
   return (
-    <div className="lg:w-4/5 w-11/12 mx-auto pt-20">
+    <div className="lg:w-4/5 w-11/12 mx-auto pt-20 lg:pb-0 pb-10">
       <Heading
         title={"My Education"}
         subHeading={"In here, I am currently studying"}
