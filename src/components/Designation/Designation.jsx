@@ -44,7 +44,7 @@ const Designation = () => {
 
             <button>
               <Link
-                to="https://www.linkedin.com/in/sayman-shakil-mahim-38b6a9318"
+                to="https://www.linkedin.com/in/sayman-shakil-mahim"
                 target="_blank"
               >
                 <FaLinkedin className="text-3xl text-cyan-600" />

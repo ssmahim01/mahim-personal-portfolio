@@ -16,7 +16,7 @@ const Home = () => {
         <AboutMe />
       </div>
 
-      <div className="lg:w-[87%] lg:mt-12 -mt-6 mx-auto" id="skills">
+      <div className="lg:w-[87%] lg:mt-16 mt-8 mx-auto" id="skills">
         <Skills />
       </div>
 

@@ -48,7 +48,7 @@ const Project = () => {
         <img
           src={project.image}
           alt={project.name}
-          className="w-full lg:h-96 md:h-72 h-52 rounded-t-lg mb-4"
+          className="w-full lg:h-96 md:h-72 h-52 object-cover rounded-t-lg mb-4"
         />
 
         <div className="lg:pr-14 pr-8 pl-5 pb-8 space-y-3">

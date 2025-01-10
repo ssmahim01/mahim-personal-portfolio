@@ -1,12 +1,12 @@
 [
       {
         "id": 1,
-        "name": "Discount Pro Application",
+        "name": "Discount Pro",
         "image": "https://i.ibb.co.com/WxXMR4r/discount-pro.png",
           "mainTechStack": ["React", "React Router", "Firebase", "Tailwind CSS", "Daisy UI"],
           "briefDescription": "An application to discover and use e-commerce discount coupons in Bangladesh.",
           "liveLink": "https://discount-pro-market.web.app",
-          "githubLink": "https://github.com/ssmahim01/discount-pro-application",
+          "githubLink": "https://github.com/ssmahim01/discount-pro",
           "detailedDescription": "This app helps users find coupons by brands, copy coupon codes, and browse available discounts easily.",
           "challenges": [
             "Integrating Firebase authentication and handling edge cases like multiple failed login attempts",
