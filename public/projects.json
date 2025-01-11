@@ -2,7 +2,7 @@
       {
         "id": 1,
         "name": "Discount Pro",
-        "image": "https://i.ibb.co.com/WxXMR4r/discount-pro.png",
+        "image": "https://i.ibb.co.com/7RZvYnH/discount-pro-bg.png",
           "mainTechStack": ["React", "React Router", "Firebase", "Tailwind CSS", "Daisy UI"],
           "briefDescription": "An application to discover and use e-commerce discount coupons in Bangladesh.",
           "liveLink": "https://discount-pro-market.web.app",
@@ -24,7 +24,7 @@
       {
         "id": 2,
         "name": "Chill Gamer",
-        "image": "https://i.ibb.co.com/k2t7M1D/chill-gamer.png",
+        "image": "https://i.ibb.co.com/8jKXc4B/chill-gamer-web.png",
           "mainTechStack": ["React", "React Router", "Tailwind CSS", "Daisy UI", "Firebase"],
           "briefDescription": "The platform where logged in users can add review for their favorite games",
           "liveLink": "https://chill-gamer-application.web.app",
