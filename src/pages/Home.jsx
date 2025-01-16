@@ -12,7 +12,7 @@ const Home = () => {
         <Designation />
       </div>
 
-      <div id="about-me" className="-mt-32 -mb-20">
+      <div id="about-me" className="-mt-28 -mb-20">
         <AboutMe />
       </div>
 
