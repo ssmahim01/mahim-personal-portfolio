@@ -54,10 +54,7 @@ const Project = () => {
         <div className="lg:pr-14 pr-8 pl-5 pb-8 space-y-3">
         <h1 className="md:text-3xl text-2xl font-bold mb-3">Project Name: {project.name}</h1>
         <p className="text-gray-500 font-medium">
-          <strong className="text-gray-800 font-bold">Brief Description:</strong> {project.briefDescription}
-        </p>
-        <p className="text-gray-500 font-medium">
-          <strong className="text-gray-800 font-bold">Details:</strong> {project.detailedDescription}
+          <strong className="text-gray-800 font-bold">Description:</strong> {project.briefDescription}{". "}{project.detailedDescription}
         </p>
         <p className="text-gray-500 font-medium">
           <strong className="text-gray-800 font-bold">Main Technology Stack:</strong>{" "}

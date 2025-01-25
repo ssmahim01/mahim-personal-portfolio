@@ -49,12 +49,14 @@ const Navbar = () => {
       }}
     >
       <div className="navbar-start">
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-3 items-center">
           <img
             className="w-10 h-10 rounded-md"
             src={Logo}
             alt="Logo of SS Mahim"
           />
+
+          <h2 className="md:block hidden text-3xl text-gray-900 font-extrabold">SS Mahim</h2>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">

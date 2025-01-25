@@ -1,68 +1,131 @@
 [
-      {
-        "id": 1,
-        "name": "Discount Pro",
-        "image": "https://i.ibb.co.com/7RZvYnH/discount-pro-bg.png",
-          "mainTechStack": ["React", "React Router", "Firebase", "Tailwind CSS", "Daisy UI"],
-          "briefDescription": "An application to discover and use e-commerce discount coupons in Bangladesh.",
-          "liveLink": "https://discount-pro-market.web.app",
-          "githubLink": "https://github.com/ssmahim01/discount-pro",
-          "detailedDescription": "This app helps users find coupons by brands, copy coupon codes, and browse available discounts easily.",
-          "challenges": [
-            "Integrating Firebase authentication and handling edge cases like multiple failed login attempts",
-            "Implement some packages, these packages are unknown. But, when explore the packages then easily applied"
-          ],
-          "shortcomings": [
-            "Search functionality in Brands page and users can find their favorite brand in here",
-            "Sort options in Brands page where find the top rated brands by sort functionality"
-          ],
-          "plannedImprovements": [
-            "Implementing a push notification system to inform users about new deals",
-            "Adding Sort options with functionality and Search functionality"
-          ]
-      },
-      {
-        "id": 2,
-        "name": "Chill Gamer",
-        "image": "https://i.ibb.co.com/8jKXc4B/chill-gamer-web.png",
-          "mainTechStack": ["React", "React Router", "Tailwind CSS", "Daisy UI", "Firebase"],
-          "briefDescription": "The platform where logged in users can add review for their favorite games",
-          "liveLink": "https://chill-gamer-application.web.app",
-          "githubLink": "https://github.com/ssmahim01/chill-gamer-platform",
-          "detailedDescription": "This project enables users to filter game reviews by genres to quickly find relevant content.",
-          "challenges": [
-            "Ensuring the filtering logic handles multiple genres and updates the UI in real-time",
-            "Managing the state efficiently for large datasets"
-          ],
-          "shortcomings": [
-            "Currently supports filtering by a single genre only",
-            "Does not have a search bar to combine filters with keyword search"
-          ],
-          "plannedImprovements": [
-            "Adding multi-genre filtering functionality",
-            "Integrating a search bar for more robust filtering"
-          ]
-      },
-      {
-        "id": 3,
-        "name": "MZ Shop",
-        "image": "https://i.ibb.co.com/CVLf4KF/mz-shop.png",
-          "mainTechStack": ["React", "React Router", "Tailwind CSS", "Daisy UI"],
-          "briefDescription": "The platform is shopping of accessories. From smart devices to the coolest accessories are available.",
-          "liveLink": "https://the-gadget.netlify.app",
-          "githubLink": "https://github.com/ssmahim01/mz-shop",
-          "detailedDescription": "The MZ Shop platform is the responsive website. In here, users can browse products also browse by categories. They can view details of the product and would like to add to cart or watch list.",
-          "challenges": [
-            "The main challenging thing was the Navbar not be the same in different pages, just different view in the Home page",
-            "Fetch data by categories in the Home page"
-          ],
-          "shortcomings": [
-            "When add a product in cart side from the watch list, then add the product perfectly but do not remove from the watch list. So, main focus on it",
-            "Complete the Footer. Links improvements are the main"
-          ],
-          "plannedImprovements": [
-            "Improve the Dashboard page. Apply delete functionality when add product in cart from the watch list",
-            "Add Chart in the statistics page. Now, it is empty"
-          ]
-      }
+  {
+    "id": 1,
+    "name": "Popular Medical Camp",
+    "image": "https://i.ibb.co.com/yn41Nhk/medical-camp-management-system.png",
+    "mainTechStack": [
+      "React",
+      "React Router",
+      "Tailwind CSS",
+      "Daisy UI",
+      "TailGrids",
+      "Stripe",
+      "Axios",
+      "TanStack Query",
+      "SweetAlert2"
+    ],
+    "briefDescription": "Popular Medical Camp is a responsive and feature-rich dashboard for managing medical camps and participants",
+    "liveLink": "https://popular-medical-camp.web.app",
+    "githubLink": "https://github.com/ssmahim01/Popular-Medical-Camp",
+    "detailedDescription": "Popular Medical Camp is designed to facilitate organizers and participants in managing medical camps efficiently. Organizers can add, manage, and track camps while participants can register and view their registered camps. The dashboard provides intuitive navigation and professional features for seamless management.",
+    "challenges": [
+      "Implementing a responsive sidebar with a toggle functionality for mobile and tablet views",
+      "Efficiently managing data for organizers and participants while ensuring smooth navigation",
+      "Designing a user-friendly UI that suits both organizers and participants"
+    ],
+    "shortcomings": [
+      "Currently, the count of pagination of tables in some section does not include proper dynamic data visualizations",
+      "Limited customization options for participant profiles"
+    ],
+    "plannedImprovements": [
+      "Improve dynamic counts in the tables of some section to show proper counts of specific user data row for both organizers and participants",
+      "Improve the date & time input field in manage camp page and add camp page",
+      "Add role based page where organizer can easily change role of participants or manage users"
     ]
+  },
+  {
+    "id": 2,
+    "name": "Car Rental Application",
+    "image": "https://i.ibb.co.com/N2dWNSj/car-rental.png",
+    "mainTechStack": ["React", "React Router", "Tailwind CSS", "Daisy UI", "Framer Motion", "Node.js", "Express", "MongoDB"],
+    "briefDescription": "A platform for renting cars with features for bookings, availability status, and price calculations",
+    "liveLink": "https://car-rental-client.web.app",
+    "githubLink": "https://github.com/ssmahim01/car-rental-application",
+    "detailedDescription": "This project allows users to browse cars, check their availability, book them for specific dates, and manage bookings efficiently.",
+    "challenges": [
+      "Implementing real-time booking status updates across users",
+      "Calculating total price dynamically, including fees, based on the rental period"
+    ],
+    "shortcomings": [
+      "Limited filtering options for car types and categories",
+      "UI for managing bookings can be further optimized for better user experience"
+    ],
+    "plannedImprovements": [
+      "Adding advanced filters for car types, brands, and price ranges",
+      "Integrating a payment gateway for seamless online payments"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Chill Gamer",
+    "image": "https://i.ibb.co.com/8jKXc4B/chill-gamer-web.png",
+    "mainTechStack": [
+      "React",
+      "React Router",
+      "Tailwind CSS",
+      "Daisy UI",
+      "Firebase",
+      "SweetAlert2"
+    ],
+    "briefDescription": "The platform where logged in users can add review for their favorite games",
+    "liveLink": "https://chill-gamer-application.web.app",
+    "githubLink": "https://github.com/ssmahim01/chill-gamer-platform",
+    "detailedDescription": "This project enables users to filter game reviews by genres to quickly find relevant content.",
+    "challenges": [
+      "Ensuring the filtering logic handles multiple genres and updates the UI in real-time",
+      "Managing the state efficiently for large datasets"
+    ],
+    "shortcomings": [
+      "Currently supports filtering by a single genre only",
+      "Does not have a search bar to combine filters with keyword search"
+    ],
+    "plannedImprovements": [
+      "Adding multi-genre filtering functionality",
+      "Integrating a search bar for more robust filtering"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Discount Pro",
+    "image": "https://i.ibb.co.com/7RZvYnH/discount-pro-bg.png",
+      "mainTechStack": ["React", "React Router", "Firebase", "Tailwind CSS", "Daisy UI"],
+      "briefDescription": "An application to discover and use e-commerce discount coupons in Bangladesh",
+      "liveLink": "https://discount-pro-market.web.app",
+      "githubLink": "https://github.com/ssmahim01/discount-pro",
+      "detailedDescription": "This app helps users find coupons by brands, copy coupon codes, and browse available discounts easily.",
+      "challenges": [
+        "Integrating Firebase authentication and handling edge cases like multiple failed login attempts",
+        "Implement some packages, these packages are unknown. But, when explore the packages then easily applied"
+      ],
+      "shortcomings": [
+        "Search functionality in Brands page and users can find their favorite brand in here",
+        "Sort options in Brands page where find the top rated brands by sort functionality"
+      ],
+      "plannedImprovements": [
+        "Implementing a push notification system to inform users about new deals",
+        "Adding Sort options with functionality and Search functionality"
+      ]
+  },
+  {
+    "id": 5,
+    "name": "MZ Shop",
+    "image": "https://i.ibb.co.com/CVLf4KF/mz-shop.png",
+    "mainTechStack": ["React", "React Router", "Tailwind CSS", "Daisy UI"],
+    "briefDescription": "The platform is shopping of accessories. From smart devices to the coolest accessories are available",
+    "liveLink": "https://the-gadget.netlify.app",
+    "githubLink": "https://github.com/ssmahim01/mz-shop",
+    "detailedDescription": "The MZ Shop platform is the responsive website. In here, users can browse products also browse by categories. They can view details of the product and would like to add to cart or watch list.",
+    "challenges": [
+      "The main challenging thing was the Navbar not be the same in different pages, just different view in the Home page",
+      "Fetch data by categories in the Home page"
+    ],
+    "shortcomings": [
+      "When add a product in cart side from the watch list, then add the product perfectly but do not remove from the watch list. So, main focus on it",
+      "Complete the Footer. Links improvements are the main"
+    ],
+    "plannedImprovements": [
+      "Improve the Dashboard page. Apply delete functionality when add product in cart from the watch list",
+      "Add Chart in the statistics page. Now, it is empty"
+    ]
+  }
+]
