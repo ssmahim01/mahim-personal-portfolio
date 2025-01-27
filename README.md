@@ -1,7 +1,5 @@
 # Sayman Shakil Mahim - Personal Portfolio of Mahim
 
-<hr>
-
 # Live Link of Portfolio
 
 <li><b>Link: </b>https://ss-mahim-portfolio.netlify.app</li>
