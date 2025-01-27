@@ -12,7 +12,11 @@
       "Stripe",
       "Axios",
       "TanStack Query",
-      "SweetAlert2"
+      "SweetAlert2",
+      "JWT",
+      "Node.js",
+      "Express JS",
+      "MongoDB"
     ],
     "briefDescription": "Popular Medical Camp is a responsive and feature-rich dashboard for managing medical camps and participants",
     "liveLink": "https://popular-medical-camp.web.app",
@@ -37,7 +41,17 @@
     "id": 2,
     "name": "Car Rental Application",
     "image": "https://i.ibb.co.com/N2dWNSj/car-rental.png",
-    "mainTechStack": ["React", "React Router", "Tailwind CSS", "Daisy UI", "Framer Motion", "Node.js", "Express", "MongoDB"],
+    "mainTechStack": [
+      "React",
+      "React Router",
+      "Tailwind CSS",
+      "Daisy UI",
+      "Framer Motion",
+      "JWT",
+      "Node.js",
+      "Express",
+      "MongoDB"
+    ],
     "briefDescription": "A platform for renting cars with features for bookings, availability status, and price calculations",
     "liveLink": "https://car-rental-client.web.app",
     "githubLink": "https://github.com/ssmahim01/car-rental-application",
@@ -65,7 +79,10 @@
       "Tailwind CSS",
       "Daisy UI",
       "Firebase",
-      "SweetAlert2"
+      "SweetAlert2",
+      "Node.js",
+      "Express JS",
+      "MongoDB"
     ],
     "briefDescription": "The platform where logged in users can add review for their favorite games",
     "liveLink": "https://chill-gamer-application.web.app",
@@ -88,26 +105,60 @@
     "id": 4,
     "name": "Discount Pro",
     "image": "https://i.ibb.co.com/7RZvYnH/discount-pro-bg.png",
-      "mainTechStack": ["React", "React Router", "Firebase", "Tailwind CSS", "Daisy UI"],
-      "briefDescription": "An application to discover and use e-commerce discount coupons in Bangladesh",
-      "liveLink": "https://discount-pro-market.web.app",
-      "githubLink": "https://github.com/ssmahim01/discount-pro",
-      "detailedDescription": "This app helps users find coupons by brands, copy coupon codes, and browse available discounts easily.",
-      "challenges": [
-        "Integrating Firebase authentication and handling edge cases like multiple failed login attempts",
-        "Implement some packages, these packages are unknown. But, when explore the packages then easily applied"
-      ],
-      "shortcomings": [
-        "Search functionality in Brands page and users can find their favorite brand in here",
-        "Sort options in Brands page where find the top rated brands by sort functionality"
-      ],
-      "plannedImprovements": [
-        "Implementing a push notification system to inform users about new deals",
-        "Adding Sort options with functionality and Search functionality"
-      ]
+    "mainTechStack": [
+      "React",
+      "React Router",
+      "Firebase",
+      "Tailwind CSS",
+      "Daisy UI"
+    ],
+    "briefDescription": "An application to discover and use e-commerce discount coupons in Bangladesh",
+    "liveLink": "https://discount-pro-market.web.app",
+    "githubLink": "https://github.com/ssmahim01/discount-pro",
+    "detailedDescription": "This app helps users find coupons by brands, copy coupon codes, and browse available discounts easily.",
+    "challenges": [
+      "Integrating Firebase authentication and handling edge cases like multiple failed login attempts",
+      "Implement some packages, these packages are unknown. But, when explore the packages then easily applied"
+    ],
+    "shortcomings": [
+      "Search functionality in Brands page and users can find their favorite brand in here",
+      "Sort options in Brands page where find the top rated brands by sort functionality"
+    ],
+    "plannedImprovements": [
+      "Implementing a push notification system to inform users about new deals",
+      "Adding Sort options with functionality and Search functionality"
+    ]
   },
   {
     "id": 5,
+    "name": "Dragon News",
+    "image": "https://i.ibb.co.com/pbyCsZf/dragon-news-web.png",
+    "mainTechStack": [
+      "React",
+      "React Router",
+      "Firebase",
+      "Tailwind CSS",
+      "Daisy UI"
+    ],
+    "briefDescription": "Dragon News is a news-related website featuring eight categories of news content",
+    "liveLink": "https://dragon-news-web-34946.web.app",
+    "githubLink": "https://github.com/ssmahim01/dragon-news-web",
+    "detailedDescription": "Dragon News is a user-friendly website where users can easily explore news across various categories. Access to detailed views of specific news items is restricted to logged-in users.",
+    "challenges": [
+      "Implemented React Fast Marquee to display category names. Clicking on a specific category name redirects users to the corresponding category page",
+      "Designed and structured the layout with two sidebars and centralized main content"
+    ],
+    "shortcomings": [
+      "Missing a 'Not Found' component for categories with no content. A component should be built to handle such cases",
+      "The website lacks a footer relevant to its theme and purpose"
+    ],
+    "plannedImprovements": [
+      "Enhance the routing system by completing content for the existing routes",
+      "Add additional features to improve user experience"
+    ]
+  },
+  {
+    "id": 6,
     "name": "MZ Shop",
     "image": "https://i.ibb.co.com/CVLf4KF/mz-shop.png",
     "mainTechStack": ["React", "React Router", "Tailwind CSS", "Daisy UI"],

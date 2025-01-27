@@ -15,6 +15,8 @@ const ContactMe = () => {
     emailjs.sendForm(`${import.meta.env.VITE_SERVICE_ID}`, `${import.meta.env.VITE_TEMPLATE_ID}`, form.current, `${import.meta.env.VITE_PUBLIC_KEY}`)
     .then(result => {
         // console.log(result.text);
+        e.target.reset();
+        
         Swal.fire({
             position: "center",
             icon: "success",
@@ -90,7 +92,7 @@ const ContactMe = () => {
 
         <h4 className="text-xl text-gray-700 flex gap-x-3 items-center"><ImLocation className="text-xl text-accent" /> <span className="font-semibold">Sylhet, Bangladesh</span></h4>
 
-        <h4 className="text-xl text-gray-700 flex gap-x-3 items-center"><MdEmail className="text-xl text-indigo-500" /> <span className="font-semibold">mahimzayn666@gmail.com</span></h4>
+        <h4 className="text-xl text-gray-700 flex gap-x-3 items-center"><MdEmail className="text-xl text-indigo-500" /> <span className="font-semibold">saymanshakilmahim03@gmail.com</span></h4>
 
         <h4 className="text-xl text-gray-700 flex gap-x-3 items-center"><FaPhoneAlt className="text-xl text-success" /> <span className="font-semibold">+8801818788816</span></h4>
 

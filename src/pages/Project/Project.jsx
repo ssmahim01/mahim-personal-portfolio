@@ -41,10 +41,10 @@ const Project = () => {
   }
 
   return (
-    <div className="pt-24 pb-20 lg:w-4/5 w-11/12 mx-auto">
+    <div className="py-20 lg:w-4/5 w-11/12 mx-auto">
       <Heading title={`${project.name}`} />
 
-      <div className="flex flex-col bg-lime-100 gap-4 shadow-lg rounded-lg">
+      <div className="flex flex-col border border-gray-200 bg-lime-100 gap-4 shadow-md rounded-box">
         <img
           src={project.image}
           alt={project.name}
@@ -52,25 +52,41 @@ const Project = () => {
         />
 
         <div className="lg:pr-14 pr-8 pl-5 pb-8 space-y-3">
-        <h1 className="md:text-3xl text-2xl font-bold mb-3">Project Name: {project.name}</h1>
+        <h1 className="md:text-3xl text-2xl text-gray-900 font-bold mb-3">Project Name: <span className="text-gray-800">{project.name}</span></h1>
         <p className="text-gray-500 font-medium">
           <strong className="text-gray-800 font-bold">Description:</strong> {project.briefDescription}{". "}{project.detailedDescription}
         </p>
         <p className="text-gray-500 font-medium">
           <strong className="text-gray-800 font-bold">Main Technology Stack:</strong>{" "}
-          {project.mainTechStack && project.mainTechStack.join(", ")}
+          {project.mainTechStack && project.mainTechStack.map(tech => (
+            <ul className="ml-5">
+              <li className="list-disc">{tech}</li>
+            </ul>
+          ))}
         </p>
         <p className="text-gray-500 font-medium">
-          <strong className="text-gray-800 font-bold">Facing Challenges:</strong> {project.challenges && project.challenges.join(", ")}
+          <strong className="text-gray-800 font-bold">Facing Challenges:</strong> {project.challenges && project.challenges.map(challenge => (
+            <ul className="ml-5">
+              <li className="list-disc">{challenge}</li>
+            </ul>
+          ))}
         </p>
         <p className="text-gray-500 font-medium">
           <strong className="text-gray-800 font-bold">Short Comings:</strong>{" "}
-          {project.shortcomings && project.shortcomings.join(", ")}
+          {project.shortcomings && project.shortcomings.map(short => (
+            <ul className="ml-5">
+              <li className="list-disc">{short}</li>
+            </ul>
+          ))}
         </p>
         <p className="text-gray-500 font-medium">
           <strong className="text-gray-800 font-bold">Planned Improvements:</strong>{" "}
           {project.plannedImprovements &&
-            project.plannedImprovements.join(", ")}
+            project.plannedImprovements.map(improvement => (
+              <ul className="ml-5">
+                <li className="list-disc">{improvement}</li>
+              </ul>
+            ))}
         </p>
         <div className="flex gap-4 items-center pt-4">
           <Link

@@ -43,7 +43,7 @@ const Navbar = () => {
 
   return (
     <div
-      className="navbar justify-between shadow-md fixed z-10 lg:px-16 px-6 bg-cover bg-center"
+      className="navbar justify-between shadow-sm fixed z-10 lg:px-16 px-6 bg-cover bg-center"
       style={{
         backgroundImage: `url('${NavBG}')`,
       }}
@@ -111,14 +111,11 @@ const Navbar = () => {
         {boxOpen && (
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-black bg-opacity-80 rounded-xl z-[10] mt-3 w-80 p-4 right-2 space-y-3 shadow-md *:text-white/90 *:font-bold"
+            className="menu menu-sm dropdown-content bg-black bg-opacity-90 rounded-xl z-[10] mt-3 w-80 p-4 right-2 space-y-3 shadow-md *:text-white/90 *:font-bold"
           >
-            <div className="lg:hidden flex flex-col gap-2">
-              <p className="text-2xl font-bold">SS Mahim</p>
-
-              <p className="text-xl text-sky-400 font-serif font-bold mb-2">
-                Web Developer
-              </p>
+            <div className="lg:hidden flex flex-col gap-y-4">
+              <img src="me-with-laptop.jpg" className="w-20 h-20 rounded-md" alt="An image with laptop" />
+              <p className="text-2xl font-serif text-cyan-500 font-bold">SS Mahim</p>
             </div>
 
             <div className="flex flex-col gap-3 font-bold">{routes}</div>

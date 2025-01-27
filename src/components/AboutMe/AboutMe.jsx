@@ -2,7 +2,7 @@ import meWithLaptop from "../../assets/me-with-laptop.jpg";
 
 const AboutMe = () => {
   return (
-    <div className="pt-20 lg:pb-0 pb-10">
+    <div className="lg:pt-24 pt-20 lg:pb-0 pb-10">
     {/* <Heading title={"About"} /> */}
 
       <div className="lg:w-4/5 w-11/12 mx-auto flex lg:flex-row-reverse flex-col justify-between items-center">

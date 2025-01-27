@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 import Loading from "../../components/Loading";
+import { MdReadMore } from "react-icons/md";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -64,8 +65,8 @@ const Projects = () => {
               </p>
 
               <Link to={`/project/${project.id}`}>
-                <button className="mt-5 btn bg-violet-600 rounded-none border-none text-lg text-white font-bold px-8 hover:btn-neutral">
-                  View More
+                <button className="mt-5 btn bg-violet-600 rounded-none border-none text-white font-bold px-8 hover:btn-neutral flex gap-2 items-center">
+                  <span className="text-lg">View More</span> <MdReadMore className="text-2xl" />
                 </button>
               </Link>
             </div>
