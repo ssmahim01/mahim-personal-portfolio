@@ -1,9 +1,10 @@
-# Sayman Shakil Mahim - Personal Portfolio of Mahim
+# Portfolio Name
+<li><b>SS Mahim</b></li>
+<hr>
 
 # Live Link of Portfolio
 
-<li><b>Link: </b>https://ss-mahim-portfolio.netlify.app</li>
-
+<li><b>🔗 Link: </b>https://ss-mahim-portfolio.netlify.app</li>
 <hr>
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

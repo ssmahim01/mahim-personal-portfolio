@@ -84,19 +84,19 @@ const ContactMe = () => {
         </form>
         </div>
 
-        <div className="lg:w-1/2 bg-fuchsia-50 p-12 space-y-5 border border-gray-300 shadow-md hover:shadow-2xl hover:scale-105 transition-transform duration-300 rounded-lg">
+        <div className="lg:w-1/2 bg-fuchsia-50 md:p-12 p-6 space-y-5 border border-gray-300 shadow-md hover:shadow-2xl hover:scale-105 transition-transform duration-300 rounded-lg">
 
         <h2 className="text-2xl font-bold">Contact Information</h2>
 
         <div className="divider md:w-1/2 w-4/5 pb-4"></div>
 
-        <h4 className="text-xl text-gray-700 flex gap-x-3 items-center"><ImLocation className="text-xl text-accent" /> <span className="font-semibold">Sylhet, Bangladesh</span></h4>
+        <h4 className="md:text-xl text-gray-700 flex gap-x-3 items-center"><ImLocation className="text-xl text-accent" /> <span className="font-semibold">Sylhet, Bangladesh</span></h4>
 
-        <h4 className="text-xl text-gray-700 flex gap-x-3 items-center"><MdEmail className="text-xl text-indigo-500" /> <span className="font-semibold">saymanshakilmahim03@gmail.com</span></h4>
+        <h4 className="md:text-xl text-gray-700 flex gap-x-3 items-center"><MdEmail className="text-xl text-indigo-500" /> <span className="font-semibold">saymanshakilmahim03@gmail.com</span></h4>
 
-        <h4 className="text-xl text-gray-700 flex gap-x-3 items-center"><FaPhoneAlt className="text-xl text-success" /> <span className="font-semibold">+8801818788816</span></h4>
+        <h4 className="md:text-xl text-gray-700 flex gap-x-3 items-center"><FaPhoneAlt className="text-xl text-success" /> <span className="font-semibold">+8801818788816</span></h4>
 
-        <h4 className="text-xl text-gray-700 flex gap-x-3 items-center"><ImWhatsapp className="text-2xl text-lime-500" /> <span className="font-semibold">+8801614583148</span></h4>
+        <h4 className="md:text-xl text-gray-700 flex gap-x-3 items-center"><ImWhatsapp className="text-2xl text-lime-500" /> <span className="font-semibold">+8801614583148</span></h4>
         </div>
       </div>
     </div>
