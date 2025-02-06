@@ -15,7 +15,7 @@ const Skills = () => {
         <div className="w-11/12 mx-auto pt-20">
             <Heading title={"My Skills"} subHeading={"Skills and what i am learning"} />
 
-             <Marquee className="bg-base-300 p-5 rounded-md" speed={200} pauseOnHover={true}>
+             <Marquee className="bg-base-300 p-5 rounded-md" speed={100} pauseOnHover={true}>
             <div className="flex gap-8 items-center">
                 <h2 className="text-xl font-bold flex gap-4 items-center ml-10"><span>Frontend</span> <span>|</span></h2>
 
@@ -79,7 +79,7 @@ const Skills = () => {
               <h4 className="text-center font-bold">Next JS</h4>
             </div>
 
-            <div className="bg-teal-200 rounded-lg py-8 px-24 flex flex-col gap-4 justify-center items-center">
+            <div className="bg-teal-100 rounded-lg py-8 px-24 flex flex-col gap-4 justify-center items-center">
             <figure>
                   <img
                     className="w-14 h-14"
