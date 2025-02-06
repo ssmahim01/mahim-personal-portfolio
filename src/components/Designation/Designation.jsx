@@ -10,12 +10,15 @@ const Designation = () => {
   return (
     <div className="py-20">
       <div className="lg:w-4/5 w-11/12 mx-auto flex lg:flex-row flex-col-reverse justify-between items-center gap-8">
-        <div className="space-y-3 lg:w-1/2">
-          <h2 className="lg:text-4xl text-3xl md:text-left text-center font-extrabold pb-2">
-            I am
+        <div className="space-y-2 lg:w-1/2">
+        <h3 className="lg:text-3xl text-2xl text-gray-700 md:text-left text-center font-bold">Hello, I am</h3>
+
+        <h2 className="lg:text-4xl text-3xl md:text-left text-center font-extrabold">Sayman Shakil Mahim</h2>
+
+          <h3 className="lg:text-3xl text-2xl md:text-left text-center font-extrabold pb-2">
             <span className="text-purple-500">
               <Typewriter
-                words={[" Sayman Shakil Mahim", " A Web Developer", " A Front-End Developer", " A Backend Developer"]}
+                words={[" A Web Developer", " A Front-End Developer", " A Backend Developer"]}
                 loop={false}
                 cursor
                 cursorStyle="|"
@@ -24,7 +27,7 @@ const Designation = () => {
                 delaySpeed={1000}
               />
             </span>
-          </h2>
+          </h3>
 
           <p className="lg:w-11/12 text-gray-600 md:text-base text-sm font-medium md:text-left text-center pb-5">
             A web developer is a digital creator who transforms ideas into
