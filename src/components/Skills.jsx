@@ -13,6 +13,7 @@ import git from "../assets/logos/git.png";
 import gitHub from "../assets/logos/gitHub.png";
 import postman from "../assets/logos/postman.png";
 import expressJS from "../assets/logos/express-js.png";
+import Figma from "../assets/logos/figma.png";
 import Heading from "./Heading/Heading";
 
 const Skills = () => {
@@ -155,6 +156,14 @@ const Skills = () => {
             </figure>
 
             <h4 className="text-center font-bold">Postman</h4>
+          </div>
+
+          <div className="bg-purple-100 rounded-lg py-8 px-24 flex flex-col gap-4 justify-center items-center">
+            <figure>
+              <img className="w-14 h-14 rounded-md" src={Figma} alt="Logo" />
+            </figure>
+
+            <h4 className="text-center font-bold">Figma</h4>
           </div>
         </div>
       </Marquee>

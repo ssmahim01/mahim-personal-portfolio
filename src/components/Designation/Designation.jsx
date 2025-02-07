@@ -8,7 +8,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 const Designation = () => {
   return (
-    <div className="py-20">
+    <div className="py-24">
       <div className="lg:w-4/5 w-11/12 mx-auto flex lg:flex-row flex-col-reverse justify-between items-center gap-8">
         <div className="space-y-2 lg:w-1/2">
         <h3 className="lg:text-3xl text-2xl text-gray-700 md:text-left text-center font-bold">Hello, I am</h3>
@@ -16,7 +16,7 @@ const Designation = () => {
         <h2 className="lg:text-4xl text-3xl md:text-left text-center font-extrabold">Sayman Shakil Mahim</h2>
 
           <h3 className="lg:text-3xl text-2xl md:text-left text-center font-extrabold pb-2">
-            <span className="text-purple-500">
+            <span className="text-purple-600">
               <Typewriter
                 words={[" A Web Developer", " A Front-End Developer", " A Backend Developer"]}
                 loop={false}
@@ -74,7 +74,7 @@ const Designation = () => {
           <img
             src={myImg}
             alt="Image of mine"
-            className="lg:w-96 lg:h-96 md:w-72 md:h-72 w-60 h-60 object-cover border-4 border-gray-300 rounded-full"
+            className="lg:w-[400px] lg:h-[400px] md:w-72 md:h-72 w-60 h-60 object-cover border-4 border-gray-300 rounded-full"
           />
         </figure>
       </div>
