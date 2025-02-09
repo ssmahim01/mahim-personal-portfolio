@@ -15,8 +15,12 @@ import postman from "../assets/logos/postman.png";
 import expressJS from "../assets/logos/express-js.png";
 import Figma from "../assets/logos/figma.png";
 import Heading from "./Heading/Heading";
+import GenerateByAi from "./GenerateByAi/GenerateByAi";
+import { useLocation } from "react-router-dom";
 
 const Skills = () => {
+  const location = useLocation();
+
   return (
     <div className="w-11/12 mx-auto pt-20">
       <Heading
@@ -167,6 +171,10 @@ const Skills = () => {
           </div>
         </div>
       </Marquee>
+
+      <div className="py-3">
+        {location.pathname !== "/" && <GenerateByAi />}
+      </div>
     </div>
   );
 };
