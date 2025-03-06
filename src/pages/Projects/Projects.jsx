@@ -47,10 +47,10 @@ const Projects = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="card bg-lime-100 rounded-lg shadow-md hover:shadow-2xl hover:scale-105 transition-transform duration-300"
+            className="card bg-base-100 rounded-lg shadow-md hover:shadow-2xl hover:scale-105 transition-transform duration-300"
           >
             <img
-              className="w-full h-52 rounded-t-xl"
+              className="w-full h-52 rounded-t-lg"
               src={project.image}
               alt={project.name}
             />

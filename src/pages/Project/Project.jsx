@@ -44,7 +44,7 @@ const Project = () => {
     <div className="py-20 lg:w-4/5 w-11/12 mx-auto">
       <Heading title={`${project.name}`} />
 
-      <div className="flex flex-col border border-gray-200 bg-lime-100 gap-4 shadow-md rounded-box">
+      <div className="flex flex-col border border-gray-200 bg-base-100 gap-4 shadow-sm rounded-lg">
         <img
           src={project.image}
           alt={project.name}
