@@ -39,7 +39,7 @@ const Projects = () => {
         Projects
       </h2>
 
-      <p className="text-center text-gray-500 font-semibold mb-6">
+      <p className="text-center font-semibold mb-6">
         Few projects, these has unique design
       </p>
 
@@ -56,17 +56,18 @@ const Projects = () => {
             />
 
             <div className="p-4 space-y-2">
-              <h2 className="lg:text-xl text-lg text-gray-900 font-bold">
-                Project: <span className="text-gray-700">{project.name}</span>
+              <h2 className="lg:text-xl text-lg font-bold">
+                Project: <span>{project.name}</span>
               </h2>
 
-              <p className="text-gray-500 font-semibold">
+              <p className="font-semibold">
                 {project.detailedDescription.slice(0, 60)}...
               </p>
 
               <Link to={`/project/${project.id}`}>
-                <button className="mt-5 btn bg-violet-600 rounded-none border-none text-white font-bold px-8 hover:btn-neutral flex gap-2 items-center">
-                  <span className="text-lg">View More</span> <MdReadMore className="text-2xl" />
+                <button className="mt-5 btn bg-purple-600 rounded-none border-none text-white font-bold px-8 hover:text-white hover:bg-fuchsia-600 flex gap-2 items-center">
+                  <span className="text-lg">View More</span>{" "}
+                  <MdReadMore className="text-2xl" />
                 </button>
               </Link>
             </div>

@@ -4,6 +4,7 @@ import Heading from "../../components/Heading/Heading";
 import Loading from "../../components/Loading";
 import { FaLink } from "react-icons/fa";
 import { ImGithub } from "react-icons/im";
+import { IoReturnUpBackSharp } from "react-icons/io5";
 
 const Project = () => {
   const [project, setProject] = useState([]);
@@ -44,7 +45,7 @@ const Project = () => {
     <div className="py-20 lg:w-4/5 w-11/12 mx-auto">
       <Heading title={`${project.name}`} />
 
-      <div className="flex flex-col border border-gray-200 bg-base-100 gap-4 shadow-sm rounded-lg">
+      <div className="flex flex-col bg-base-200 gap-4 shadow-md rounded-lg">
         <img
           src={project.image}
           alt={project.name}
@@ -52,18 +53,18 @@ const Project = () => {
         />
 
         <div className="lg:pr-14 pr-8 pl-5 pb-8 space-y-3">
-          <h1 className="md:text-3xl text-2xl text-gray-900 font-bold mb-3">
-            Project Name: <span className="text-gray-800">{project.name}</span>
+          <h1 className="md:text-3xl text-2xl font-bold mb-3">
+            Project Name: <span>{project.name}</span>
           </h1>
-          <p className="text-gray-500 font-medium">
-            <strong className="text-gray-800 font-bold">Description:</strong>{" "}
+          <p className="font-medium">
+            <strong className="font-bold">Description:</strong>{" "}
             {project.briefDescription}
             {". "}
             {project.detailedDescription}
           </p>
 
           <div className="flex flex-col gap-1">
-            <strong className="text-gray-800 font-bold">
+            <strong className="font-bold">
               Main Technology Stack:
             </strong>{" "}
             <div>
@@ -71,7 +72,7 @@ const Project = () => {
                 project.mainTechStack.map((tech) => (
                   <p
                     key={tech}
-                    className="my-1 ml-2 badge badge-outline text-gray-700 font-bold"
+                    className="my-1 ml-2 badge badge-outline font-bold"
                   >
                     {tech}
                   </p>
@@ -79,8 +80,8 @@ const Project = () => {
             </div>
           </div>
 
-          <div className="text-gray-500 font-medium">
-            <strong className="text-gray-800 font-bold">
+          <div className="font-medium">
+            <strong className="font-bold">
               Facing Challenges:
             </strong>{" "}
             {project.challenges &&
@@ -90,8 +91,8 @@ const Project = () => {
                 </ul>
               ))}
           </div>
-          <div className="text-gray-500 font-medium">
-            <strong className="text-gray-800 font-bold">Short Comings:</strong>{" "}
+          <div className="font-medium">
+            <strong className="font-bold">Short Comings:</strong>{" "}
             {project.shortcomings &&
               project.shortcomings.map((short) => (
                 <ul key={short} className="ml-5">
@@ -99,8 +100,8 @@ const Project = () => {
                 </ul>
               ))}
           </div>
-          <div className="text-gray-500 font-medium">
-            <strong className="text-gray-800 font-bold">
+          <div className="font-medium">
+            <strong className="font-bold">
               Planned Improvements:
             </strong>{" "}
             {project.plannedImprovements &&
@@ -133,9 +134,10 @@ const Project = () => {
       <div className="mt-10">
         <Link
           to="/projects"
-          className="btn btn-outline border-2 border-teal-500 text-teal-500 hover:border-none font-bold hover:bg-teal-500 text-lg hover:text-white px-6"
+          className="btn btn-outline border-2 border-teal-500 text-teal-500 hover:border-none font-bold hover:bg-teal-500 hover:text-white px-6"
         >
-          Back to Projects
+          <IoReturnUpBackSharp className="text-2xl" />
+          <span className="text-lg">Back to Projects</span>
         </Link>
       </div>
     </div>

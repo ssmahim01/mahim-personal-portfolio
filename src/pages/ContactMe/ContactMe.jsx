@@ -3,7 +3,7 @@ import Heading from "../../components/Heading/Heading";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import { ImLocation, ImWhatsapp } from "react-icons/im";
-import { MdEmail } from "react-icons/md";
+import { MdEmail, MdMessage } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 
 const ContactMe = () => {
@@ -38,10 +38,10 @@ const ContactMe = () => {
 
   return (
     <div className="py-20">
-      <Heading title={"Contact Me"} />
+      <Heading title={"Contact Me"} subHeading={"Send the mail via name and email"} />
 
       <div className="lg:w-4/5 w-11/12 mx-auto flex lg:flex-row flex-col-reverse justify-between gap-8">
-        <div className="lg:w-1/2 bg-zinc-200 border border-gray-300 shadow-md hover:shadow-2xl hover:scale-105 transition-transform duration-300 rounded-lg">
+        <div className="lg:w-1/2 border border-gray-300 shadow-md hover:shadow-2xl hover:scale-95 transition-transform duration-300 rounded-lg">
         <form
           ref={form}
           onSubmit={handleSendEmail}
@@ -76,27 +76,28 @@ const ContactMe = () => {
               className="textarea textarea-bordered textarea-success textarea-lg lg:pt-2 lg:pl-3 block w-full lg:w-4/5"
             ></textarea>
           </div>
-          <div className="form-control mt-6">
-            <button className="btn bg-amber-500 text-white text-lg font-bold md:w-2/6 w-full border-none">
-              Send Message
+          <div className="form-control mt-6 md:w-2/6">
+            <button className="btn btn-sm rounded-md bg-cyan-600 text-white font-bold w-full border-none flex gap-2 justify-center items-center">
+              <span className="text-base">Send Message</span>
+              <MdMessage className="text-xl" />
             </button>
           </div>
         </form>
         </div>
 
-        <div className="lg:w-1/2 bg-fuchsia-50 md:p-12 p-6 space-y-5 border border-gray-300 shadow-md hover:shadow-2xl hover:scale-105 transition-transform duration-300 rounded-lg">
+        <div className="lg:w-1/2 md:p-12 p-6 space-y-5 border border-gray-300 shadow-md hover:shadow-2xl hover:scale-95 transition-transform duration-300 rounded-lg">
 
         <h2 className="text-2xl font-bold">Contact Information</h2>
 
         <div className="divider md:w-1/2 w-4/5 pb-4"></div>
 
-        <h4 className="md:text-xl text-gray-700 flex gap-x-3 items-center"><ImLocation className="text-xl text-accent" /> <span className="font-semibold">Sylhet, Bangladesh</span></h4>
+        <h4 className="md:text-xl flex gap-x-3 items-center"><ImLocation className="text-xl text-cyan-600" /> <span className="font-semibold">Sylhet, Bangladesh</span></h4>
 
-        <h4 className="md:text-xl text-gray-700 flex gap-x-3 items-center"><MdEmail className="text-xl text-indigo-500" /> <span className="font-semibold">saymanshakilmahim03@gmail.com</span></h4>
+        <h4 className="md:text-xl flex gap-x-3 items-center"><MdEmail className="text-xl text-indigo-500" /> <span className="font-semibold">saymanshakilmahim03@gmail.com</span></h4>
 
-        <h4 className="md:text-xl text-gray-700 flex gap-x-3 items-center"><FaPhoneAlt className="text-xl text-success" /> <span className="font-semibold">+8801818788816</span></h4>
+        <h4 className="md:text-xl flex gap-x-3 items-center"><FaPhoneAlt className="text-xl text-success" /> <span className="font-semibold">+8801818788816</span></h4>
 
-        <h4 className="md:text-xl text-gray-700 flex gap-x-3 items-center"><ImWhatsapp className="text-2xl text-lime-500" /> <span className="font-semibold">+8801614583148</span></h4>
+        <h4 className="md:text-xl flex gap-x-3 items-center"><ImWhatsapp className="text-2xl text-green-500" /> <span className="font-semibold">+8801614583148</span></h4>
         </div>
       </div>
     </div>
