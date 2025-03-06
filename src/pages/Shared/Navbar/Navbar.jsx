@@ -4,10 +4,21 @@ import NavBG from "../../../assets/color-bg.png";
 import Resume from "../../../components/Resume";
 import { useEffect, useRef, useState } from "react";
 import "./Navbar.css";
+import ThemeController from "../ThemeController/ThemeController";
 
 const Navbar = () => {
   const [boxOpen, setBoxOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  const handleToggle = () => {
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+  };
 
   const routes = (
     <>
@@ -43,10 +54,7 @@ const Navbar = () => {
 
   return (
     <div
-      className="navbar justify-between shadow-sm fixed z-10 lg:px-16 px-6 bg-cover bg-center"
-      style={{
-        backgroundImage: `url('${NavBG}')`,
-      }}
+      className={`navbar justify-between shadow-sm border-b fixed z-10 lg:px-16 px-6 ${theme === "light" ? "custom-bg bg-cover bg-center bg-no-repeat border-gray-200" : "bg-neutral-800 border-gray-700"}`}
     >
       <div className="navbar-start">
         <div className="flex gap-3 items-center">
@@ -56,16 +64,19 @@ const Navbar = () => {
             alt="Logo of SS Mahim"
           />
 
-          <h2 className="md:block hidden text-3xl text-gray-900 font-extrabold">SS Mahim</h2>
+          <a href="/" className={`md:block hidden text-3xl ${theme === "light" ? "text-gray-900" : "text-gray-200"} font-extrabold`}>
+            SS Mahim
+          </a>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="*:ml-5 menu menu-horizontal px-1 text-base *:text-gray-700 *:font-extrabold">
+        <ul className={`*:ml-5 menu menu-horizontal px-1 text-base ${theme === "light" ? "*:text-gray-700" : "*:text-gray-200"} *:font-extrabold`}>
           {routes}
         </ul>
       </div>
 
-      <div className="navbar-end">
+      <div className="navbar-end flex md:gap-4 gap-3 items-center">
+        <ThemeController theme={theme} handleToggle={handleToggle} />
         <Resume />
       </div>
 
@@ -114,8 +125,14 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-black bg-opacity-90 rounded-xl z-[10] mt-3 w-80 p-4 right-2 space-y-3 shadow-md *:text-white/90 *:font-bold"
           >
             <div className="lg:hidden flex flex-col gap-y-4">
-              <img src="me-with-laptop.jpg" className="w-20 h-20 rounded-md" alt="An image with laptop" />
-              <p className="text-2xl font-serif text-cyan-500 font-bold">SS Mahim</p>
+              <img
+                src="me-with-laptop.jpg"
+                className="w-20 h-20 rounded-md"
+                alt="An image with laptop"
+              />
+              <p className="text-2xl font-serif text-cyan-500 font-bold">
+                SS Mahim
+              </p>
             </div>
 
             <div className="flex flex-col gap-3 font-bold">{routes}</div>
