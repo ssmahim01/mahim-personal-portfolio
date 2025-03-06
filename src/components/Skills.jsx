@@ -21,7 +21,7 @@ const Skills = () => {
     <div className="w-11/12 mx-auto pt-20">
       <Heading
         title={"My Skills"}
-        subHeading={"Skills and what i am learning"}
+        subHeading={"Skills and what I am learning"}
       />
 
       <Marquee
@@ -39,7 +39,7 @@ const Skills = () => {
               <img className="w-14 h-14 rounded-lg" src={HTML5} alt="Logo" />
             </figure>
 
-            <h4 className="text-center font-bold">HTML5</h4>
+            <h4 className="text-center font-bold text-gray-900">HTML5</h4>
           </div>
 
           <div className="bg-indigo-100 rounded-lg py-8 px-24 flex flex-col gap-4 justify-center items-center">
@@ -47,7 +47,7 @@ const Skills = () => {
               <img className="w-14 h-14 rounded-lg" src={CSS3} alt="Logo" />
             </figure>
 
-            <h4 className="text-center font-bold">CSS3</h4>
+            <h4 className="text-center font-bold text-gray-900">CSS3</h4>
           </div>
 
           <div className="bg-blue-100 rounded-lg py-8 px-24 flex flex-col gap-4 justify-center items-center">
@@ -59,7 +59,7 @@ const Skills = () => {
               />
             </figure>
 
-            <h4 className="text-center font-bold">Tailwind CSS</h4>
+            <h4 className="text-center font-bold text-gray-900">Tailwind CSS</h4>
           </div>
 
           <div className="bg-amber-100 rounded-lg py-8 px-24 flex flex-col gap-4 justify-center items-center">
@@ -67,7 +67,7 @@ const Skills = () => {
               <img className="w-14 h-14 rounded-lg" src={JS} alt="Logo" />
             </figure>
 
-            <h4 className="text-center font-bold">JavaScript</h4>
+            <h4 className="text-center font-bold text-gray-900">JavaScript</h4>
           </div>
 
           <div className="bg-gray-300 rounded-lg py-8 px-24 flex flex-col gap-4 justify-center items-center">
@@ -75,7 +75,7 @@ const Skills = () => {
               <img className="w-14 h-14 rounded-md" src={NextJS} alt="Logo" />
             </figure>
 
-            <h4 className="text-center font-bold">Next JS</h4>
+            <h4 className="text-center font-bold text-gray-900">Next JS</h4>
           </div>
 
           <div className="bg-teal-100 rounded-lg py-8 px-24 flex flex-col gap-4 justify-center items-center">
@@ -83,7 +83,7 @@ const Skills = () => {
               <img className="w-14 h-14" src={React} alt="Logo" />
             </figure>
 
-            <h4 className="text-center font-bold">React</h4>
+            <h4 className="text-center font-bold text-gray-900">React</h4>
           </div>
 
           <div className="bg-orange-100 rounded-lg py-8 px-24 flex flex-col gap-4 justify-center items-center">
@@ -91,7 +91,7 @@ const Skills = () => {
               <img className="w-14 h-14 rounded-lg" src={Firebase} alt="Logo" />
             </figure>
 
-            <h4 className="text-center font-bold">Firebase</h4>
+            <h4 className="text-center font-bold text-gray-900">Firebase</h4>
           </div>
 
           <h2 className="text-xl font-bold flex gap-4 items-center ml-10">
@@ -103,7 +103,7 @@ const Skills = () => {
               <img className="w-14 h-14" src={NodeJS} alt="Logo" />
             </figure>
 
-            <h4 className="text-center font-bold">Node JS</h4>
+            <h4 className="text-center font-bold text-gray-900">Node JS</h4>
           </div>
 
           <div className="bg-gray-300 rounded-lg py-8 px-24 flex flex-col gap-4 justify-center items-center">
@@ -111,7 +111,7 @@ const Skills = () => {
               <img className="w-16 h-14 rounded-md" src={expressJS} alt="Logo" />
             </figure>
 
-            <h4 className="text-center font-bold">Express JS</h4>
+            <h4 className="text-center font-bold text-gray-900">Express JS</h4>
           </div>
 
           <div className="bg-green-100 rounded-lg py-8 px-24 flex flex-col gap-4 justify-center items-center">
@@ -119,7 +119,7 @@ const Skills = () => {
               <img className="w-14 h-14" src={MongoDB} alt="Logo" />
             </figure>
 
-            <h4 className="text-center font-bold">MongoDB</h4>
+            <h4 className="text-center font-bold text-gray-900">MongoDB</h4>
           </div>
 
           <h2 className="text-xl font-bold flex gap-4 items-center ml-10">
@@ -131,7 +131,7 @@ const Skills = () => {
               <img className="w-14 h-14" src={vsCode} alt="Logo" />
             </figure>
 
-            <h4 className="text-center font-bold">VS Code</h4>
+            <h4 className="text-center font-bold text-gray-900">VS Code</h4>
           </div>
 
           <div className="bg-amber-100 rounded-lg py-8 px-24 flex flex-col gap-4 justify-center items-center">
@@ -139,7 +139,7 @@ const Skills = () => {
               <img className="w-14 h-14" src={git} alt="Logo" />
             </figure>
 
-            <h4 className="text-center font-bold">Git</h4>
+            <h4 className="text-center font-bold text-gray-900">Git</h4>
           </div>
 
           <div className="bg-gray-300 rounded-lg py-8 px-24 flex flex-col gap-4 justify-center items-center">
@@ -147,7 +147,7 @@ const Skills = () => {
               <img className="w-14 h-14 rounded-md" src={gitHub} alt="Logo" />
             </figure>
 
-            <h4 className="text-center font-bold">Git Hub</h4>
+            <h4 className="text-center font-bold text-gray-900">Git Hub</h4>
           </div>
 
           <div className="bg-orange-100 rounded-lg py-8 px-24 flex flex-col gap-4 justify-center items-center">
@@ -155,7 +155,7 @@ const Skills = () => {
               <img className="w-14 h-14 rounded-md" src={postman} alt="Logo" />
             </figure>
 
-            <h4 className="text-center font-bold">Postman</h4>
+            <h4 className="text-center font-bold text-gray-900">Postman</h4>
           </div>
 
           <div className="bg-purple-100 rounded-lg py-8 px-24 flex flex-col gap-4 justify-center items-center">
@@ -163,7 +163,7 @@ const Skills = () => {
               <img className="w-14 h-14 rounded-md" src={Figma} alt="Logo" />
             </figure>
 
-            <h4 className="text-center font-bold">Figma</h4>
+            <h4 className="text-center font-bold text-gray-900">Figma</h4>
           </div>
         </div>
       </Marquee>

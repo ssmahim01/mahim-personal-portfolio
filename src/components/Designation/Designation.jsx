@@ -11,7 +11,7 @@ const Designation = () => {
     <div className="py-24">
       <div className="lg:w-4/5 w-11/12 mx-auto flex lg:flex-row flex-col-reverse justify-between items-center gap-8">
         <div className="space-y-2 lg:w-1/2">
-        <h3 className="lg:text-3xl text-2xl text-gray-700 md:text-left text-center font-bold">Hello, I am</h3>
+        <h3 className="lg:text-3xl text-2xl md:text-left text-center font-bold">Hello, I am</h3>
 
         <h2 className="lg:text-4xl text-3xl md:text-left text-center font-extrabold">Sayman Shakil Mahim</h2>
 
@@ -29,7 +29,7 @@ const Designation = () => {
             </span>
           </h3>
 
-          <p className="lg:w-11/12 text-gray-600 md:text-base text-sm font-medium md:text-left text-center pb-5">
+          <p className="lg:w-11/12 md:text-base text-sm font-medium md:text-left text-center pb-5">
             A web developer is a digital creator who transforms ideas into
             interactive realities on the internet. They design and build
             websites and applications. They are the architects of the online
@@ -50,13 +50,13 @@ const Designation = () => {
                 to="https://www.linkedin.com/in/sayman-shakil-mahim"
                 target="_blank"
               >
-                <FaLinkedin className="text-3xl text-cyan-600" />
+                <FaLinkedin className="text-3xl text-indigo-500" />
               </Link>
             </button>
 
             <button>
               <Link to="https://www.facebook.com/ssmahim" target="_blank">
-                <FaFacebook className="text-3xl text-blue-600" />
+                <FaFacebook className="text-3xl text-blue-500" />
               </Link>
             </button>
 
