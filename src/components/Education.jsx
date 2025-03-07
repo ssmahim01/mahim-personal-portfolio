@@ -12,7 +12,7 @@ const Education = () => {
 
       <section className="grid lg:grid-cols-2 grid-cols-1 gap-8">
         <div className="bg-base-200 shadow-md hover:shadow-xl transition-all hover:translate-y-4 rounded-lg p-4">
-          <div className="flex justify-between items-center">
+          <div className="flex flex-wrap md:flex-row flex-col justify-between md:items-center items-start md:gap-0 gap-2">
             <div className="hover:translate-x-4 hover:drop-shadow-lg">
               <FaGraduationCap className="text-7xl" />
             </div>
@@ -64,7 +64,7 @@ const Education = () => {
         </div>
 
         <div className="bg-base-200 shadow-md hover:shadow-xl transition-all hover:translate-y-4 rounded-lg p-4">
-          <div className="flex justify-between items-center">
+          <div className="flex flex-wrap md:flex-row flex-col justify-between md:items-center items-start md:gap-0 gap-2">
             <div className="hover:translate-x-4 hover:drop-shadow-lg">
               <img src={collegeIcon} className="w-14 h-14" alt="College Icon" />
             </div>

@@ -41,7 +41,7 @@ const ContactMe = () => {
       <Heading title={"Contact Me"} subHeading={"Send the mail via name and email"} />
 
       <div className="lg:w-4/5 w-11/12 mx-auto flex lg:flex-row flex-col-reverse justify-between gap-8">
-        <div className="lg:w-1/2 border border-gray-300 shadow-md hover:shadow-2xl hover:scale-95 transition-transform duration-300 rounded-lg">
+        <div className="lg:w-1/2 bg-base-200 shadow-md hover:shadow-2xl hover:scale-95 transition-transform duration-300 rounded-lg">
         <form
           ref={form}
           onSubmit={handleSendEmail}
@@ -73,10 +73,10 @@ const ContactMe = () => {
             <textarea
               name="message"
               placeholder="Write your message..."
-              className="textarea textarea-bordered textarea-success textarea-lg lg:pt-2 lg:pl-3 block w-full lg:w-4/5"
+              className="textarea textarea-bordered textarea-success textarea-lg pt-1 pl-3 block w-full lg:w-4/5"
             ></textarea>
           </div>
-          <div className="form-control mt-6 md:w-2/6">
+          <div className="form-control pt-2 md:w-2/6">
             <button className="btn btn-sm rounded-md bg-cyan-600 text-white font-bold w-full border-none flex gap-2 justify-center items-center">
               <span className="text-base">Send Message</span>
               <MdMessage className="text-xl" />
@@ -85,7 +85,7 @@ const ContactMe = () => {
         </form>
         </div>
 
-        <div className="lg:w-1/2 md:p-12 p-6 space-y-5 border border-gray-300 shadow-md hover:shadow-2xl hover:scale-95 transition-transform duration-300 rounded-lg">
+        <div className="lg:w-1/2 md:p-12 p-6 space-y-5 bg-base-200 shadow-md hover:shadow-2xl hover:scale-95 transition-transform duration-300 rounded-lg">
 
         <h2 className="text-2xl font-bold">Contact Information</h2>
 

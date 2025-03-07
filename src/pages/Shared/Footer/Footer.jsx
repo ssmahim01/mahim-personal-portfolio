@@ -1,11 +1,9 @@
-import React from "react";
-
-const Footer = () => {
+const Footer = ({theme}) => {
   return (
-    <footer className="footer footer-center bg-neutral text-white font-semibold p-4">
+    <footer className={`border-t ${theme === "light" ? "custom-bg border-gray-300 bg-center" : "bg-gray-900 border-gray-800"} footer footer-center font-semibold p-4`}>
       <aside>
-        <p>
-          Copyright © {new Date().getFullYear()} - All right reserved by <span className="text-accent font-bold">Sayman Shakil Mahim</span>
+        <p className="text-base font-medium">
+          Copyright © {new Date().getFullYear()} - All right reserved by <span className="text-teal-600 font-bold">Sayman Shakil Mahim</span>
         </p>
       </aside>
     </footer>

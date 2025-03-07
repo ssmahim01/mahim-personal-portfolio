@@ -1,24 +1,13 @@
 import { NavLink } from "react-router-dom";
 import Logo from "../../../assets/logos/sayman-shakil-mahim(SSM).jpg";
-import NavBG from "../../../assets/color-bg.png";
 import Resume from "../../../components/Resume";
 import { useEffect, useRef, useState } from "react";
 import "./Navbar.css";
 import ThemeController from "../ThemeController/ThemeController";
 
-const Navbar = () => {
+const Navbar = ({theme, handleToggle}) => {
   const [boxOpen, setBoxOpen] = useState(false);
   const dropdownRef = useRef(null);
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
-
-  useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("theme", theme);
-  }, [theme]);
-
-  const handleToggle = () => {
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
-  };
 
   const routes = (
     <>
@@ -54,7 +43,11 @@ const Navbar = () => {
 
   return (
     <div
-      className={`navbar justify-between shadow-sm border-b fixed z-10 lg:px-16 px-6 ${theme === "light" ? "custom-bg bg-cover bg-center bg-no-repeat border-gray-200" : "bg-neutral-800 border-gray-700"}`}
+      className={`navbar justify-between shadow-sm border-b fixed z-10 lg:px-16 px-6 ${
+        theme === "light"
+          ? "custom-bg bg-cover bg-center border-gray-100"
+          : "bg-gray-900 border-gray-800"
+      }`}
     >
       <div className="navbar-start">
         <div className="flex gap-3 items-center">
@@ -64,20 +57,31 @@ const Navbar = () => {
             alt="Logo of SS Mahim"
           />
 
-          <a href="/" className={`md:block hidden text-3xl ${theme === "light" ? "text-gray-900" : "text-gray-200"} font-extrabold`}>
+          <a
+            href="/"
+            className={`md:block hidden text-3xl ${
+              theme === "light" ? "text-gray-900" : "text-gray-200"
+            } font-extrabold`}
+          >
             SS Mahim
           </a>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className={`*:ml-5 menu menu-horizontal px-1 text-base ${theme === "light" ? "*:text-gray-700" : "*:text-gray-200"} *:font-extrabold`}>
+        <ul
+          className={`*:ml-5 menu menu-horizontal px-1 text-base ${
+            theme === "light" ? "*:text-gray-700" : "*:text-gray-200"
+          } *:font-extrabold`}
+        >
           {routes}
         </ul>
       </div>
 
       <div className="navbar-end flex md:gap-4 gap-3 items-center">
         <ThemeController theme={theme} handleToggle={handleToggle} />
-        <Resume />
+        <div className="md:block hidden">
+          <Resume />
+        </div>
       </div>
 
       <div className="dropdown ml-3" ref={dropdownRef}>
@@ -136,6 +140,10 @@ const Navbar = () => {
             </div>
 
             <div className="flex flex-col gap-3 font-bold">{routes}</div>
+
+            <div className="pt-2 md:hidden block">
+              <Resume />
+            </div>
           </ul>
         )}
       </div>

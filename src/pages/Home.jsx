@@ -28,7 +28,7 @@ const Home = () => {
           <Projects />
         </div>
 
-        <div className="-mt-16" id="contact-me">
+        <div className="-mt-20" id="contact-me">
           <ContactMe />
         </div>
       </div>
